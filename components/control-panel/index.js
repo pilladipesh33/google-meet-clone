@@ -9,22 +9,26 @@ export const ControlPanel = (props) => {
       {muted ? (
         <MicOff
           className={cn(styles.icon, styles.active)}
-          size={55}
+          size={60}
           onClick={toggleAudio}
         />
       ) : (
-        <Mic className={styles.icon} size={55} onClick={toggleAudio} />
+        <Mic className={styles.icon} size={60} onClick={toggleAudio} />
       )}
       {playing ? (
-        <Video className={styles.icon} size={55} onClick={toggleVideo} />
+        <Video className={styles.icon} size={60} onClick={toggleVideo} />
       ) : (
         <VideoOff
           className={cn(styles.icon, styles.active)}
-          size={55}
+          size={60}
           onClick={toggleVideo}
         />
       )}
-      <PhoneOff size={55} className={cn(styles.icon)} onClick={leaveRoom} />
+      <PhoneOff
+        size={60}
+        className={"p-4 rounded-full text-white cursor-pointer bg-red-500"}
+        onClick={leaveRoom}
+      />
     </div>
   );
 };

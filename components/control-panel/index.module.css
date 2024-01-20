@@ -3,7 +3,7 @@
   width: 300px;
   .icon {
     @apply p-4 rounded-full text-white cursor-pointer;
-    background-color: #00000a;
+    background-color: #71797e;
 
     /* &:hover,
     &.active {

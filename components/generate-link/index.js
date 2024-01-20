@@ -7,7 +7,8 @@ export const GenerateLink = (props) => {
   const { roomId } = props;
   return (
     <div className={styles.copyContainer}>
-      <div className={styles.copyHeading}>Copy room id:</div>
+      <div className={styles.copyHeading}>Your meeting&apos;s ready</div>
+      <p>Share this meeting link with others than you want in this meeting</p>
       <hr className="my-1" />
       <div className={styles.copyDescription}>
         <span>{roomId}</span>

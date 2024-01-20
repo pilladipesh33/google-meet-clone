@@ -10,7 +10,6 @@ const Player = (props) => {
       className={cn(styles.playerContainer, {
         [styles.notActive]: !isActive,
         [styles.active]: isActive,
-        // ['']: !playing,
       })}
     >
       {playing ? (
@@ -22,7 +21,9 @@ const Player = (props) => {
           width={"100%"}
         />
       ) : (
-        <CircleUserRound className={styles.user} size={isActive ? 400 : 150} />
+        <div className="flex justify-center items-center">
+          <CircleUserRound className="" size={isActive ? 400 : 150} />
+        </div>
       )}
       {!isActive ? (
         muted ? (
